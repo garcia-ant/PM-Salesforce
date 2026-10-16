@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Total_Estimated_Hours__c</fullName>
+    <inlineHelpText>Sum of WorkTask hours</inlineHelpText>
+    <label>Total Estimated Hours</label>
+    <summarizedField>PF_Tasks__c.PF_Estimate_Hours__c</summarizedField>
+    <summaryForeignKey>PF_Tasks__c.PF_Story__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

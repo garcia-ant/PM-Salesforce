@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Create_New_Daily_Stand_Up_Meeting</fullName>
+    <active>true</active>
+    <description>The Daily Stand Up Meeting can be created, if the related Project Status is &quot;In Progress&quot; and that the Daily Date corresponds to the period indicated in the actual dates.</description>
+    <errorConditionFormula>AND(NOT( $Setup.Org_Exceptions__c.Bypass_Validation_rules__c ),OR(
+ISBLANK(Project__r.PF_Actual_Start_Date__c),
+Project__r.PF_Actual_End_Date__c  &lt;= TODAY(),
+NOT(ISPICKVAL( Project__r.PF_Project_Status__c , &quot;In Progress&quot;))
+))</errorConditionFormula>
+    <errorMessage>The Daily Stand Up Meeting cannot be created. Verify if the related Project Status is &quot;In Progress&quot; and that the Daily Date corresponds to the period indicated in the actual dates.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assigned_To_is_mandatory_for_1st_Edit</fullName>
+    <active>true</active>
+    <description>Assigned To field is mandatory for 1st update and not Create</description>
+    <errorConditionFormula>AND(NOT( $Setup.Org_Exceptions__c.Bypass_Validation_rules__c ), AND(NOT(ISNEW()), ISBLANK(PF_Assigned_To__c)))</errorConditionFormula>
+    <errorMessage>Please populate &quot;Assigned To&quot; on the Defect</errorMessage>
+</ValidationRule>

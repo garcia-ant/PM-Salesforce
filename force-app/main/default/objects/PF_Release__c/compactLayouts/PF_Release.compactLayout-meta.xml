@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Release</fullName>
+    <fields>Name</fields>
+    <fields>PF_Release_Number__c</fields>
+    <fields>PF_Project__c</fields>
+    <fields>PF_Release_Type__c</fields>
+    <fields>PF_Planned_Start_Date__c</fields>
+    <fields>PF_Planned_End_Date__c</fields>
+    <fields>PF_Release_Status__c</fields>
+    <label>Release</label>
+</CompactLayout>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Story</fullName>
+    <active>true</active>
+    <description>Standard Project Force record type</description>
+    <label>Story</label>
+    <picklistValues>
+        <picklist>PF_Story_Point__c</picklist>
+        <values>
+            <fullName>0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>13</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>21</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>34</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>55</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>89</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PF_Story_Priority__c</picklist>
+        <values>
+            <fullName>Critical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PF_Story_Status__c</picklist>
+        <values>
+            <fullName>Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assigned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blocked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bug Fixing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canceled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Done</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Design</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Promoted to Prod</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ready for Playback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ready for Testing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reopen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sprint Ready</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting Deployment</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PF_Story_Type__c</picklist>
+        <values>
+            <fullName>Change Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Scope_Segmentation__c</picklist>
+        <values>
+            <fullName>Excluded from scope and confirmed by customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Included in the agreed scope</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New scope Requested by customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New scope suggested by PMO</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Story_Complexity_Executability__c</picklist>
+        <values>
+            <fullName>difficult</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>easy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>extreme complex</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>normal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>very easy</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Story_Dimension_Size__c</picklist>
+        <values>
+            <fullName>large</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>medium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>small</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>very large</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>very small</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

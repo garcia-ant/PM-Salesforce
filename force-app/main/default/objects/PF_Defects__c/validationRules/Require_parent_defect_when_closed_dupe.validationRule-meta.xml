@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_parent_defect_when_closed_dupe</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT( $Setup.Org_Exceptions__c.Bypass_Validation_rules__c ),
+IF( 
+ISPICKVAL(PF_Resolution_Type__c , &quot;Duplicate&quot;) &amp;&amp;
+ISBLANK(PF_Parent_Defect__c ), 
+True, 
+False))</errorConditionFormula>
+    <errorDisplayField>PF_Parent_Defect__c</errorDisplayField>
+    <errorMessage>When closing a defect as a duplicate, please provide the parent defect that it&apos;s related to.</errorMessage>
+</ValidationRule>

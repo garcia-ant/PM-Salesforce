@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Timesheet_Detail</fullName>
+    <fields>Name</fields>
+    <fields>Lookup_Timesheet__c</fields>
+    <fields>Client__c</fields>
+    <fields>Project__c</fields>
+    <fields>Lookup_WorkTask__c</fields>
+    <fields>Resource_Name__c</fields>
+    <fields>Date__c</fields>
+    <fields>Duration_Hours__c</fields>
+    <label>Timesheet Detail</label>
+</CompactLayout>

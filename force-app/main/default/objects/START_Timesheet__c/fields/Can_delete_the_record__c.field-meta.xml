@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Can_delete_the_record__c</fullName>
+    <formula>IF(
+AND(
+ISPICKVAL(Status__c , &apos;Open&apos;),
+Client_Name__c = ($User.FirstName+&apos; &apos;+$User.LastName)),
+false,true)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Can delete the record?</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

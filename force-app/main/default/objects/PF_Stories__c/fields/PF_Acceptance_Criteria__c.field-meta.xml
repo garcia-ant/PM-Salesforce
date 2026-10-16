@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Acceptance_Criteria__c</fullName>
+    <inlineHelpText>Provide the required acceptance criteria to validate this story against. Use the approach of &quot;I will know this is successful, when I can ____&quot;</inlineHelpText>
+    <label>Acceptance Criteria</label>
+    <length>131072</length>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

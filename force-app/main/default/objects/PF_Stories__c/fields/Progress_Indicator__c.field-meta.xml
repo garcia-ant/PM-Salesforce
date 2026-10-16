@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Progress_Indicator__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+AND(Percentage_of_Completion__c =0, Estimated_Percentage__c = 0), NULL,
+IF(
+Percentage_of_Completion__c &gt;= Estimated_Percentage__c,
+IMAGE(&quot;/img/samples/color_green.gif&quot; ,&quot;Green&quot;, 15, 300),
+IF(
+(Estimated_Percentage__c - Percentage_of_Completion__c)  &lt;=  0.05,
+IMAGE(&quot;/img/samples/color_yellow.gif&quot; ,&quot;Yellow&quot;, 15, 300),
+
+IMAGE(&quot;/img/samples/color_red.gif&quot;, &quot;Red&quot;, 15, 300)
+
+)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Story completion indicator (RAG ratings) based on comparing the estimated completion percentage to the actual completion percentage</inlineHelpText>
+    <label>Progress Indicator</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

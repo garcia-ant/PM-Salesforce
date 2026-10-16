@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Story_Level</fullName>
+    <active>true</active>
+    <description>Story should be mandatory if Level is updates as Story</description>
+    <errorConditionFormula>AND(NOT( $Setup.Org_Exceptions__c.Bypass_Validation_rules__c ), ISPICKVAL(PF_Level__c, &apos;Story&apos;) &amp;&amp;  ISBLANK( PF_Story__c ))</errorConditionFormula>
+    <errorMessage>Please populate Story</errorMessage>
+</ValidationRule>

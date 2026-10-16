@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Planned_Fixed_Date__c</fullName>
+    <inlineHelpText>When providing a fix, provide a projected fixed date when the fix will be deployed to the testing environments.</inlineHelpText>
+    <label>Planned Fix Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

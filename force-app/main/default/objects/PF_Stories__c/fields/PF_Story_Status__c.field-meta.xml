@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Story_Status__c</fullName>
+    <inlineHelpText>Select the status for the story.</inlineHelpText>
+    <label>Story Status</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New</fullName>
+                <color>#0B6FCE</color>
+                <default>true</default>
+                <label>New/To Do</label>
+            </value>
+            <value>
+                <fullName>In Design</fullName>
+                <color>#E27001</color>
+                <default>false</default>
+                <label>In Design</label>
+            </value>
+            <value>
+                <fullName>Sprint Ready</fullName>
+                <color>#33CCFF</color>
+                <default>false</default>
+                <label>Sprint Ready</label>
+            </value>
+            <value>
+                <fullName>Assigned</fullName>
+                <default>false</default>
+                <label>Assigned</label>
+            </value>
+            <value>
+                <fullName>Reopen</fullName>
+                <color>#57F17C</color>
+                <default>false</default>
+                <label>Reopen</label>
+            </value>
+            <value>
+                <fullName>In Progress</fullName>
+                <color>#F3D904</color>
+                <default>false</default>
+                <label>In Progress/Doing</label>
+            </value>
+            <value>
+                <fullName>Bug Fixing</fullName>
+                <color>#66FFFF</color>
+                <default>false</default>
+                <label>Bug Fixing</label>
+            </value>
+            <value>
+                <fullName>Waiting Deployment</fullName>
+                <color>#F96FB7</color>
+                <default>false</default>
+                <label>Waiting Deployment</label>
+            </value>
+            <value>
+                <fullName>In Review</fullName>
+                <default>false</default>
+                <label>In Review</label>
+            </value>
+            <value>
+                <fullName>Ready for Testing</fullName>
+                <color>#0B24BE</color>
+                <default>false</default>
+                <label>Ready for Testing</label>
+            </value>
+            <value>
+                <fullName>Ready for Playback</fullName>
+                <color>#A53711</color>
+                <default>false</default>
+                <label>Ready for Playback</label>
+            </value>
+            <value>
+                <fullName>Accepted</fullName>
+                <color>#336666</color>
+                <default>false</default>
+                <label>Accepted</label>
+            </value>
+            <value>
+                <fullName>Promoted to Prod</fullName>
+                <color>#F96FB7</color>
+                <default>false</default>
+                <label>Promoted to Prod</label>
+            </value>
+            <value>
+                <fullName>Done</fullName>
+                <color>#66E9BD</color>
+                <default>false</default>
+                <label>Completed/Done</label>
+            </value>
+            <value>
+                <fullName>Blocked</fullName>
+                <color>#AFCADF</color>
+                <default>false</default>
+                <label>Blocked</label>
+            </value>
+            <value>
+                <fullName>Canceled</fullName>
+                <color>#EFAE73</color>
+                <default>false</default>
+                <label>Canceled</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

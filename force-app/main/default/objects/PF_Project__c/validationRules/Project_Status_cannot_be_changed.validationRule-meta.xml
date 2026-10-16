@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Status_cannot_be_changed</fullName>
+    <active>true</active>
+    <description>The Project Status cannot be changed to “In progress”, if the Actual Start date is null or in the future or the Actual End Date is less or equal today.</description>
+    <errorConditionFormula>AND(NOT( $Setup.Org_Exceptions__c.Bypass_Validation_rules__c ), OR(
+AND(
+ISPICKVAL(PF_Project_Status__c, &quot;In Progress&quot;),
+PF_Actual_End_Date__c &lt;= TODAY()
+),
+AND(
+ISPICKVAL(PF_Project_Status__c, &quot;In Progress&quot;),
+ISBLANK( PF_Actual_Start_Date__c)
+),
+AND(
+ISPICKVAL(PF_Project_Status__c, &quot;In Progress&quot;),
+PF_Actual_Start_Date__c &gt; TODAY()
+)
+)
+)</errorConditionFormula>
+    <errorDisplayField>PF_Project_Status__c</errorDisplayField>
+    <errorMessage>The Project Status cannot be changed to “In Progress”. Please verify the actual dates.</errorMessage>
+</ValidationRule>

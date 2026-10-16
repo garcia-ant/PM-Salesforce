@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_fix_date_when_in_dev</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT( $Setup.Org_Exceptions__c.Bypass_Validation_rules__c ), OR(
+ISPICKVAL( PF_Status__c , &quot;In Development&quot;), 
+ISPICKVAL( PF_Status__c , &quot;Awaiting Deployment&quot;),
+ISPICKVAL( PF_Status__c , &quot;Awaiting Re-Test&quot;)
+)
+&amp;&amp;  
+ISBLANK( PF_Planned_Fixed_Date__c ))</errorConditionFormula>
+    <errorDisplayField>PF_Planned_Fixed_Date__c</errorDisplayField>
+    <errorMessage>When moving a defect past the &quot;In Development&quot; status, provide an estimated fix date when the defect will reach the testing environment.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Total_Test_Case_Execution__c</fullName>
+    <inlineHelpText>Number of SIT test case excecutions</inlineHelpText>
+    <label>Total QA/SIT Execution</label>
+    <summaryFilterItems>
+        <field>PF_TestCaseExecution__c.PF_Test_Execution_Type__c</field>
+        <operation>equals</operation>
+        <value>SIT</value>
+    </summaryFilterItems>
+    <summaryForeignKey>PF_TestCaseExecution__c.PF_Test_Case__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

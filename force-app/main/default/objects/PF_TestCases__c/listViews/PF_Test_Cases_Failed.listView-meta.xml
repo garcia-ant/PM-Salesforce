@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Test_Cases_Failed</fullName>
+    <columns>PF_Story__c</columns>
+    <columns>NAME</columns>
+    <columns>PF_Predecessor_Test_Case__c</columns>
+    <columns>PF_Status__c</columns>
+    <columns>PF_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PF_Status__c</field>
+        <operation>equals</operation>
+        <value>Failed</value>
+    </filters>
+    <label>Test Cases - Failed</label>
+</ListView>

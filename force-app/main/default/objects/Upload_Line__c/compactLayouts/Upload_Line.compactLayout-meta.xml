@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Upload_Line</fullName>
+    <fields>Upload__c</fields>
+    <fields>Staff__c</fields>
+    <fields>Staff_Number__c</fields>
+    <fields>Line_number_of_the_file__c</fields>
+    <fields>Hours_Ipower__c</fields>
+    <fields>Transaction_Date__c</fields>
+    <label>Upload Line</label>
+</CompactLayout>

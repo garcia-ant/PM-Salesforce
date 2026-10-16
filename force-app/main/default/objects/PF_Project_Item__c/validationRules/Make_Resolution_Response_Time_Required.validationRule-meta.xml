@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Make_Resolution_Response_Time_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT( $Setup.Org_Exceptions__c.Bypass_Validation_rules__c ), OR(
+AND( 
+RecordType.DeveloperName  = &apos;Question&apos;,
+ISPICKVAL(PF_Status__c, &apos;Closed&apos;),
+
+OR( 
+len( Answer__c  )=0,
+ISNULL(PF_Resolution_Response_Date__c)
+) 
+),
+
+AND( 
+RecordType.DeveloperName  &lt;&gt; &apos;Question&apos;,
+ISPICKVAL(PF_Status__c, &apos;Closed&apos;),
+
+OR( 
+len(PF_Resolution_Response__c )=0,
+ISNULL(PF_Resolution_Response_Date__c)
+) 
+)
+
+)
+)</errorConditionFormula>
+    <errorMessage>Enter Resolution/Response or Answer and Resolution/Response Date details when closing record</errorMessage>
+</ValidationRule>

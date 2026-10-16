@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Defect__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <inlineHelpText>Populate for &quot;Change Request&quot; , If raised from a defect.</inlineHelpText>
+    <label>Defect</label>
+    <referenceTo>PF_Defects__c</referenceTo>
+    <relationshipLabel>Requests/ Enhancements</relationshipLabel>
+    <relationshipName>Stories</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

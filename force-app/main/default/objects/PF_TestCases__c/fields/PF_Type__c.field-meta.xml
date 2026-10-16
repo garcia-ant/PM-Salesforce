@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Type__c</fullName>
+    <inlineHelpText>Provide Type or cycle for the Test case (QA/SIT/UAT etc.)</inlineHelpText>
+    <label>Type</label>
+    <required>true</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Unit Test</fullName>
+                <default>false</default>
+                <label>Unit Test</label>
+            </value>
+            <value>
+                <fullName>SIT</fullName>
+                <default>false</default>
+                <label>SIT</label>
+            </value>
+            <value>
+                <fullName>UAT</fullName>
+                <default>false</default>
+                <label>UAT</label>
+            </value>
+            <value>
+                <fullName>Smoke Test</fullName>
+                <default>false</default>
+                <label>Smoke Test</label>
+            </value>
+            <value>
+                <fullName>Regression</fullName>
+                <default>false</default>
+                <label>Regression</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

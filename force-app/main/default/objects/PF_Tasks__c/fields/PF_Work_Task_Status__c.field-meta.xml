@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Work_Task_Status__c</fullName>
+    <inlineHelpText>Select the status for the work task.</inlineHelpText>
+    <label>Work Task Status</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New</fullName>
+                <color>#0B6FCE</color>
+                <default>true</default>
+                <label>New/To Do</label>
+            </value>
+            <value>
+                <fullName>In Progress</fullName>
+                <color>#78C953</color>
+                <default>false</default>
+                <label>In Progress/Doing</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <color>#666666</color>
+                <default>false</default>
+                <label>Completed/Done</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

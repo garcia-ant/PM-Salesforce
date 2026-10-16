@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Action_and_Decisions</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Compact_Layout</compactLayoutAssignment>
+    <label>Action and Decisions</label>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>Discovery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Final Report</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kick-off</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

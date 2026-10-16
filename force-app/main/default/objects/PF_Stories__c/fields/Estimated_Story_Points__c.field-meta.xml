@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Estimated_Story_Points__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(Story_Dimension_Size__c, &quot;very small&quot;, CASE( Story_Complexity_Executability__c , &quot;very easy&quot;, 1, &quot;easy&quot;, 2, &quot;normal&quot;, 3, &quot;difficult&quot;, 5, &quot;extreme complex&quot;, 8,0), &quot;small&quot;, CASE( Story_Complexity_Executability__c , &quot;very easy&quot;, 2, &quot;easy&quot;, 3, &quot;normal&quot;, 5, &quot;difficult&quot;, 8, &quot;extreme complex&quot;, 13,0), &quot;medium&quot;, CASE( Story_Complexity_Executability__c , &quot;very easy&quot;, 3, &quot;easy&quot;, 5, &quot;normal&quot;, 8, &quot;difficult&quot;, 13, &quot;extreme complex&quot;, 21,0), &quot;large&quot;, CASE( Story_Complexity_Executability__c , &quot;very easy&quot;, 5, &quot;easy&quot;, 8, &quot;normal&quot;, 13, &quot;difficult&quot;, 21, &quot;extreme complex&quot;, 34,0), &quot;very large&quot;, CASE( Story_Complexity_Executability__c , &quot;very easy&quot;, 8, &quot;easy&quot;, 13, &quot;normal&quot;, 21, &quot;difficult&quot;, 34, &quot;extreme complex&quot;, 55,0),0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Estimated Story Points</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

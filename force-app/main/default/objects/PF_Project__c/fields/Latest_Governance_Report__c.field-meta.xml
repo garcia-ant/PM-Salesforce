@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Latest_Governance_Report__c</fullName>
+    <label>Latest Governance Report</label>
+    <summarizedField>Governance_Report__c.CreatedDate</summarizedField>
+    <summaryFilterItems>
+        <field>Governance_Report__c.Status__c</field>
+        <operation>equals</operation>
+        <value>Submitted, Reviewed</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Governance_Report__c.Project__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

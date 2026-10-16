@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Total_TC_Written__c</fullName>
+    <inlineHelpText>Sum of Total Test Cases written related to this story</inlineHelpText>
+    <label># Total Test Cases</label>
+    <summaryForeignKey>PF_TestCases__c.PF_Story__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

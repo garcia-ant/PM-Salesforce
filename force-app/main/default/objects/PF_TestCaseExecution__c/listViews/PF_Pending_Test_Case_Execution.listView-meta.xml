@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Pending_Test_Case_Execution</fullName>
+    <columns>PF_Test_Case__c</columns>
+    <columns>PF_Predecessor_Test_Case__c</columns>
+    <columns>NAME</columns>
+    <columns>PF_Assigned_To__c</columns>
+    <columns>PF_Status__c</columns>
+    <columns>PF_Target_Completion_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PF_Status__c</field>
+        <operation>equals</operation>
+        <value>Not Started,In Progress,Need Help</value>
+    </filters>
+    <label>Pending Test Case Execution</label>
+</ListView>

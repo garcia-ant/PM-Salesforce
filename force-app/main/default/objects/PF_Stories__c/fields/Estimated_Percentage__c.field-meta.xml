@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Estimated_Percentage__c</fullName>
+    <formula>IF(
+AND(Business_Hours_Total__c &gt;= Business_Hours_Now__c,
+Business_Hours_Now__c  &gt;  0),
+
+1 /   Business_Hours_Total__c * Business_Hours_Now__c,
+IF(
+OR(
+Business_Hours_Now__c  &lt;=  0,
+Business_Hours_Total__c &lt;=0
+),
+NULL,
+
+
+1 
+))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>The estimated percentage of completion of the story so far, calculated based on the start date / time and the end date / time</inlineHelpText>
+    <label>Estimated Percentage</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

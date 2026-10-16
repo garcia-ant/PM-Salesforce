@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Start_End_Date_Check</fullName>
+    <active>true</active>
+    <description>Start date cannot be greater than end date.</description>
+    <errorConditionFormula>AND(NOT( $Setup.Org_Exceptions__c.Bypass_Validation_rules__c ), PF_Start_Date__c &gt; PF_End_Date__c)</errorConditionFormula>
+    <errorMessage>Start date cannot be greater than end date.</errorMessage>
+</ValidationRule>

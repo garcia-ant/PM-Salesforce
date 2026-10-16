@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Risks_and_Issues_Required_Fields</fullName>
+    <active>true</active>
+    <description>The impact and probability field needs to be populated when the project item type is Risks or Issues.</description>
+    <errorConditionFormula>AND(NOT( $Setup.Org_Exceptions__c.Bypass_Validation_rules__c ), AND(
+OR(
+ISPICKVAL(PF_Type__c, &apos;Risk&apos;),
+ISPICKVAL(PF_Type__c, &apos;Issue&apos;)),
+OR(
+ISPICKVAL(PF_Impact__c , &quot;&quot;),
+ISPICKVAL(PF_Probability__c, &quot;&quot;)
+)))</errorConditionFormula>
+    <errorMessage>When Project Item Type is Risk or Issue, then Impact and Probability field cannot be blank.</errorMessage>
+</ValidationRule>

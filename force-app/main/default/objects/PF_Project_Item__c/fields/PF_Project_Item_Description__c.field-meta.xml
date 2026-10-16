@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Project_Item_Description__c</fullName>
+    <inlineHelpText>(Assumptions &amp; Dependencies) - Describe implications &amp; constraints
+(Open Question)  - Describe question to be answered
+(Key Decision) - Document key decision
+(Action Item) - Describe the required action
+(Risks &amp; Issues) - Describe risks or issues</inlineHelpText>
+    <label>Project Item Description</label>
+    <length>131072</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

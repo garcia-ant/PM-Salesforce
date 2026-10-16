@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_All_Project_Items_Assigned_To_Me</fullName>
+    <columns>NAME</columns>
+    <columns>PF_Project_Item_Number__c</columns>
+    <columns>PF_Type__c</columns>
+    <columns>PF_Identified_Date__c</columns>
+    <columns>PF_Assigned_To__c</columns>
+    <columns>PF_Impact__c</columns>
+    <columns>PF_Probability__c</columns>
+    <columns>PF_Risk_Ranking__c</columns>
+    <columns>PF_Status__c</columns>
+    <columns>PF_Project__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PF_Project_Item_Current_User__c</field>
+        <operation>equals</operation>
+        <value>Yes</value>
+    </filters>
+    <label>All Project Items Assigned To Me</label>
+</ListView>

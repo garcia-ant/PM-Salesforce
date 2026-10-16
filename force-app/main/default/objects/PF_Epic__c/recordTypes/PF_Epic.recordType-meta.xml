@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Epic</fullName>
+    <active>true</active>
+    <description>Standard Project Force record type</description>
+    <label>Epic</label>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Doing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Done</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To-Do</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

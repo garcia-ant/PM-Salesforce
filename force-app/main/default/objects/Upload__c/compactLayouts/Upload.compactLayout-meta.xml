@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Upload</fullName>
+    <fields>Name</fields>
+    <fields>Project__c</fields>
+    <fields>Total_lines_read__c</fields>
+    <fields>total_rows_inserted__c</fields>
+    <fields>Status__c</fields>
+    <label>Upload</label>
+</CompactLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Test_Case</fullName>
+    <fields>Name</fields>
+    <fields>PF_Assigned_To__c</fields>
+    <fields>PF_Project_FF__c</fields>
+    <fields>PF_Release_FF__c</fields>
+    <fields>PF_Sprint_FF__c</fields>
+    <fields>PF_Story__c</fields>
+    <fields>PF_Epic_FF__c</fields>
+    <label>Test Case</label>
+</CompactLayout>

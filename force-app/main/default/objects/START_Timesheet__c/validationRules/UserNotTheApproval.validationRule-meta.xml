@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UserNotTheApproval</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT( $Setup.Org_Exceptions__c.Bypass_Validation_rules__c ), AND(  NOT(CONTAINS($Setup.START_TimeSheet_Definitions__c.Approval_Role__c,  $UserRole.Name)) ,OR( ISCHANGED(Status__c) ,ISCHANGED(Comments_Approval__c)),  ISPICKVAL(PRIORVALUE(Status__c), &apos;Submitted&apos;)  ))</errorConditionFormula>
+    <errorMessage>You don&apos;t have permissions to update the status and the approval comments</errorMessage>
+</ValidationRule>

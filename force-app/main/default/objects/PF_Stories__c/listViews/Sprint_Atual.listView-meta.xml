@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sprint_Atual</fullName>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PF_Sprint__c</field>
+        <operation>equals</operation>
+        <value>Sprint 12</value>
+    </filters>
+    <filters>
+        <field>PF_Story_Owner__c</field>
+        <operation>equals</operation>
+        <value>João Sousa</value>
+    </filters>
+    <label>Sprint Atual</label>
+</ListView>

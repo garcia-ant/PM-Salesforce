@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Financial_Resource</fullName>
+    <active>true</active>
+    <description>Includes cash, lines of credit and the ability to have stock option plans for employees.</description>
+    <label>Financial Resource</label>
+    <picklistValues>
+        <picklist>Type_Of_Resource__c</picklist>
+        <values>
+            <fullName>Bank Deposits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cash</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Cashless Payments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Check%2F Cheque</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grants and loans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Promissory Note</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stock options for employees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tradelines and lines of credit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Venture capital</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Unit_Type__c</picklist>
+        <values>
+            <fullName>Day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hour</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Piece</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

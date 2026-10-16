@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Status__c</fullName>
+    <inlineHelpText>Test Case status is marked as Passed if all or atleast 2 related executions have passed without failures or open Defects.</inlineHelpText>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New</fullName>
+                <color>#0B6FCE</color>
+                <default>true</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>Ready for Execution</fullName>
+                <color>#CC33CC</color>
+                <default>false</default>
+                <label>Ready for Execution</label>
+            </value>
+            <value>
+                <fullName>In Progress</fullName>
+                <color>#E27001</color>
+                <default>false</default>
+                <label>In Progress</label>
+            </value>
+            <value>
+                <fullName>Passed</fullName>
+                <color>#009900</color>
+                <default>false</default>
+                <label>Passed</label>
+            </value>
+            <value>
+                <fullName>Failed</fullName>
+                <color>#FF0000</color>
+                <default>false</default>
+                <label>Failed</label>
+            </value>
+            <value>
+                <fullName>Retest</fullName>
+                <color>#66E9BD</color>
+                <default>false</default>
+                <label>Retest</label>
+            </value>
+            <value>
+                <fullName>PMO Action</fullName>
+                <color>#F96FB7</color>
+                <default>false</default>
+                <label>PMO Action</label>
+            </value>
+            <value>
+                <fullName>Inf Required</fullName>
+                <color>#E27001</color>
+                <default>false</default>
+                <label>Inf Required</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

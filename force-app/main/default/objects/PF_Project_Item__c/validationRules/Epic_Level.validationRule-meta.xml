@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Epic_Level</fullName>
+    <active>true</active>
+    <description>Epic is mandatory if Level is selected as Epic</description>
+    <errorConditionFormula>AND(NOT( $Setup.Org_Exceptions__c.Bypass_Validation_rules__c ), ISPICKVAL(PF_Level__c, &apos;Epic&apos;) &amp;&amp; ISBLANK(PF_Epic__c))</errorConditionFormula>
+    <errorMessage>Please populate Epic</errorMessage>
+</ValidationRule>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Number_Open_Defects__c</fullName>
+    <inlineHelpText>Number of open defects on test case</inlineHelpText>
+    <label># Open Defects</label>
+    <summaryFilterItems>
+        <field>PF_Defects__c.PF_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Closed</value>
+    </summaryFilterItems>
+    <summaryForeignKey>PF_Defects__c.PF_Test_Case__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

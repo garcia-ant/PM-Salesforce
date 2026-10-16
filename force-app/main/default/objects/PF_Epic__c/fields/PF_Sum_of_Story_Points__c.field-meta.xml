@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Sum_of_Story_Points__c</fullName>
+    <description>The sum of all story points of stories in the epic</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Sum of all story points in the epic</inlineHelpText>
+    <label>Sum Of Story Points</label>
+    <precision>4</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

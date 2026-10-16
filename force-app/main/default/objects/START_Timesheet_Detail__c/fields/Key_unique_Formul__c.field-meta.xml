@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Key_unique_Formul__c</fullName>
+    <externalId>false</externalId>
+    <formula>Lookup_WorkTask__c +&apos;_&apos;+  Lookup_Timesheet__c +&apos;_&apos;+ Resource_Name__c +&apos;_&apos;+  TEXT(Date__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Unique key</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_On_Hold_Projects</fullName>
+    <columns>NAME</columns>
+    <columns>PF_Project_Status__c</columns>
+    <columns>PF_Planned_End_Date__c</columns>
+    <columns>PF_Actual_End_Date__c</columns>
+    <columns>PF_Planned_Start_Date__c</columns>
+    <columns>PF_Actual_Start_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PF_Project_Status__c</field>
+        <operation>equals</operation>
+        <value>On Hold</value>
+    </filters>
+    <label>On Hold Projects</label>
+</ListView>

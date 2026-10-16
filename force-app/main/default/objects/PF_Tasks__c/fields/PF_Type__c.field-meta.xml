@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Type__c</fullName>
+    <inlineHelpText>Select the type of work task.</inlineHelpText>
+    <label>Development Type</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Apex Class</fullName>
+                <default>false</default>
+                <label>Apex Class</label>
+            </value>
+            <value>
+                <fullName>Business Decision</fullName>
+                <default>false</default>
+                <label>Business Decision</label>
+            </value>
+            <value>
+                <fullName>Configuration</fullName>
+                <default>false</default>
+                <label>Configuration</label>
+            </value>
+            <value>
+                <fullName>Data Migration</fullName>
+                <default>false</default>
+                <label>Data Migration</label>
+            </value>
+            <value>
+                <fullName>Integration</fullName>
+                <default>false</default>
+                <label>Integration</label>
+            </value>
+            <value>
+                <fullName>Reporting &amp; Visualization</fullName>
+                <default>false</default>
+                <label>Reporting &amp; Visualization</label>
+            </value>
+            <value>
+                <fullName>Test Script</fullName>
+                <default>false</default>
+                <label>Test Script</label>
+            </value>
+            <value>
+                <fullName>Trigger/Trigger Helper</fullName>
+                <default>false</default>
+                <label>Trigger/Trigger Helper</label>
+            </value>
+            <value>
+                <fullName>UI/UX Design</fullName>
+                <default>false</default>
+                <label>UI/UX Design</label>
+            </value>
+            <value>
+                <fullName>UI/UX Development</fullName>
+                <default>false</default>
+                <label>UI/UX Development</label>
+            </value>
+            <value>
+                <fullName>VF Page/Component</fullName>
+                <default>false</default>
+                <label>VF Page/Component</label>
+            </value>
+            <value>
+                <fullName>Web Services/Apex Call Outs</fullName>
+                <default>false</default>
+                <label>Web Services/Apex Call Outs</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

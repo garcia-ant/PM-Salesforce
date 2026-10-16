@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Physical_Resource</fullName>
+    <active>true</active>
+    <description>Physical assets are tangible resources that a company uses to create its value proposition. These could include equipment, inventory, buildings, manufacturing plants and distribution networks that enable the business to function.</description>
+    <label>Physical Resource</label>
+    <picklistValues>
+        <picklist>Type_Of_Resource__c</picklist>
+        <values>
+            <fullName>Buildings and office spaces</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laptop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machinery and equipment</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Point-of-sale systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicles and trucks</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Unit_Type__c</picklist>
+        <values>
+            <fullName>Day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hour</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Piece</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

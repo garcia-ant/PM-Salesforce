@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UserDiferentFromOwner</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(NOT( $Setup.Org_Exceptions__c.Bypass_Validation_rules__c ), OR(
+AND( $User.Id  &lt;&gt;  Lookup_Timesheet__r.OwnerId, OR(  
+ISCHANGED(Country__c ),
+ISCHANGED(All_Day__c),
+ISCHANGED(Lookup_WorkTask__c),
+ISCHANGED(Owner_and_Date_Task_Country__c),
+ISCHANGED(Date__c),
+ISCHANGED(Lookup_Timesheet__c),
+ISCHANGED(Quick_Comments__c),
+ISCHANGED(Duration_Hours__c),
+ISCHANGED(Client__c))) ,
+
+AND($User.Id  &lt;&gt;  Lookup_Timesheet__r.OwnerId, ISNEW())))</errorConditionFormula>
+    <errorMessage>You can not add or change any field because you are not the owner of this Timesheet</errorMessage>
+</ValidationRule>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Age_In_Days__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK( PF_Date_Passed__c ), 
+TODAY() - DATEVALUE (CreatedDate), 
+PF_Date_Passed__c - DATEVALUE (CreatedDate))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This is the number of days the test case assignment has aged since created. If the assignment is still open, then it calculates from Today - Created Date. If the assignment is passed, then it calculates from Date Passed - Created Date.</inlineHelpText>
+    <label>Age (In Days)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

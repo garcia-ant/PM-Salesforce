@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Intellectual_Resource</fullName>
+    <active>true</active>
+    <description>These are non-physical, intangible resources like brand, patents, IP, copyrights, and even partnerships.</description>
+    <label>Intellectual Resource</label>
+    <picklistValues>
+        <picklist>Type_Of_Resource__c</picklist>
+        <values>
+            <fullName>Company%E2%80%99s brand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Copyrights and patents</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer databases</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer knowledge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proprietary knowledge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Systems and processes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Unit_Type__c</picklist>
+        <values>
+            <fullName>Day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hour</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Piece</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

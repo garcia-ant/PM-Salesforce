@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Resolution_Response__c</fullName>
+    <inlineHelpText>Please describe:
+    (Assumptions &amp; Dependencies): Planned actions
+    (Open Question): Answer
+    (Decisions):  Decision(s) made
+    (Action Items): Confirmed resolution or output
+    (Risks &amp; Issues): Mitigation plan</inlineHelpText>
+    <label>Resolution / Response</label>
+    <length>131072</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

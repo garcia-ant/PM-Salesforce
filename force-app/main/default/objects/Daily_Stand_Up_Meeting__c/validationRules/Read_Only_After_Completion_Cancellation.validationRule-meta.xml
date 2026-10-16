@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Read_Only_After_Completion_Cancellation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT( $Setup.Org_Exceptions__c.Bypass_Validation_rules__c ), TEXT(PRIORVALUE( Status__c )) = &quot;Completed&quot; || TEXT(PRIORVALUE( Status__c )) = &quot;Canceled&quot;)</errorConditionFormula>
+    <errorMessage>You cannot edit the Daily Stand Up Meeting after completion/ cancellation.</errorMessage>
+</ValidationRule>

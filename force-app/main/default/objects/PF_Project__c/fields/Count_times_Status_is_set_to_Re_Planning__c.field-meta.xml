@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Count_times_Status_is_set_to_Re_Planning__c</fullName>
+    <description>Every time Project Status changes to Re-Planning the Counter field increases by 1.</description>
+    <externalId>false</externalId>
+    <formula>Counter_of_Project_Status__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Every time Project Status changes to Re-Planning the Counter field increases by 1.</inlineHelpText>
+    <label>Count times Status is set to Re-Planning</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

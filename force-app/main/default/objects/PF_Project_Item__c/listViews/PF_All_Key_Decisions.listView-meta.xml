@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_All_Key_Decisions</fullName>
+    <columns>NAME</columns>
+    <columns>PF_Type__c</columns>
+    <columns>PF_Status__c</columns>
+    <columns>PF_Assigned_To__c</columns>
+    <columns>PF_Identified_Date__c</columns>
+    <columns>PF_Resolution_Response_Date__c</columns>
+    <columns>PF_Days_Since_Last_Update__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PF_Type__c</field>
+        <operation>equals</operation>
+        <value>Key Decision</value>
+    </filters>
+    <label>All Key Decisions</label>
+</ListView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Story_FF__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&quot;/&quot; &amp;  PF_Test_Case__r.PF_Story__c , PF_Test_Case__r.PF_Story__r.Name , &quot;_self&quot; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>The associated story for the related test case is identified here.</inlineHelpText>
+    <label>Story</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

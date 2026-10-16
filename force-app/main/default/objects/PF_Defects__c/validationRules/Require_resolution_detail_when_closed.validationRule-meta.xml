@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_resolution_detail_when_closed</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT( $Setup.Org_Exceptions__c.Bypass_Validation_rules__c ), ISPICKVAL( PF_Status__c  , &quot;Awaiting Re-Test&quot;) &amp;&amp; 
+LEN( PF_Resolution_Details__c  ) = 0)</errorConditionFormula>
+    <errorDisplayField>PF_Resolution_Details__c</errorDisplayField>
+    <errorMessage>When closing a defect, please provide the resolution details for the fix.</errorMessage>
+</ValidationRule>

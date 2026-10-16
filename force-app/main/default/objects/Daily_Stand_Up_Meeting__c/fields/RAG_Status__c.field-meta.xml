@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RAG_Status__c</fullName>
+    <label>RAG Status</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>RAG_Level__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Project is on track</fullName>
+                <default>false</default>
+                <label>Project is on track</label>
+            </value>
+            <value>
+                <fullName>Some issues</fullName>
+                <default>false</default>
+                <label>Some issues</label>
+            </value>
+            <value>
+                <fullName>Being Managed</fullName>
+                <default>false</default>
+                <label>Being Managed</label>
+            </value>
+            <value>
+                <fullName>Needs to be closely monitored</fullName>
+                <default>false</default>
+                <label>Needs to be closely monitored</label>
+            </value>
+            <value>
+                <fullName>Serious issues</fullName>
+                <default>false</default>
+                <label>Serious issues</label>
+            </value>
+            <value>
+                <fullName>Dates being missed</fullName>
+                <default>false</default>
+                <label>Dates being missed</label>
+            </value>
+            <value>
+                <fullName>Recovery  plan required</fullName>
+                <default>false</default>
+                <label>Recovery  plan required</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Green</controllingFieldValue>
+            <valueName>Project is on track</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Amber</controllingFieldValue>
+            <valueName>Some issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Amber</controllingFieldValue>
+            <valueName>Being Managed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Amber</controllingFieldValue>
+            <valueName>Needs to be closely monitored</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Red</controllingFieldValue>
+            <valueName>Serious issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Red</controllingFieldValue>
+            <valueName>Dates being missed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Red</controllingFieldValue>
+            <valueName>Recovery  plan required</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_All_Test_Cases</fullName>
+    <columns>PF_Story__c</columns>
+    <columns>NAME</columns>
+    <columns>PF_Predecessor_Test_Case__c</columns>
+    <columns>PF_Status__c</columns>
+    <columns>PF_Type__c</columns>
+    <columns>PF_Test_Case_Number__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Test Cases</label>
+</ListView>

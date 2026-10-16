@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Calculated_Estimated_Hours__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( And (ISPICKVAL(PF_Type__c,&apos;Configuration&apos;), ISPICKVAL( PF_Complexity__c , &apos;Simple&apos;)) , 10, 
+IF( And (ISPICKVAL(PF_Type__c,&apos;Configuration&apos;), ISPICKVAL( PF_Complexity__c , &apos;Medium&apos;)) , 20, 
+IF( And (ISPICKVAL(PF_Type__c,&apos;Configuration&apos;), ISPICKVAL( PF_Complexity__c , &apos;Complex&apos;)) , 40, 
+IF( And (ISPICKVAL(PF_Type__c,&apos;VF Page/Component&apos;), ISPICKVAL( PF_Complexity__c ,&apos;Simple&apos;)) , 28, 
+IF( And (ISPICKVAL(PF_Type__c,&apos;VF Page/Component&apos;), ISPICKVAL( PF_Complexity__c ,&apos;Medium&apos;)) , 50, 
+IF( And (ISPICKVAL(PF_Type__c,&apos;VF Page/Component&apos;), ISPICKVAL( PF_Complexity__c ,&apos;Complex&apos;)) , 100, 
+IF( And (ISPICKVAL(PF_Type__c,&apos;Apex Class&apos;), ISPICKVAL( PF_Complexity__c , &apos;Simple&apos;)) , 30, 
+IF( And (ISPICKVAL(PF_Type__c,&apos;Apex Class&apos;), ISPICKVAL( PF_Complexity__c , &apos;Medium&apos;)) , 44, 
+IF( And (ISPICKVAL(PF_Type__c,&apos;Apex Class&apos;), ISPICKVAL( PF_Complexity__c , &apos;Complex&apos;)) , 80, 
+IF( And (ISPICKVAL(PF_Type__c,&apos;Web services/Apex call outs&apos;),ISPICKVAL( PF_Complexity__c , &apos;Simple&apos;)) , 34, 
+IF( And (ISPICKVAL(PF_Type__c,&apos;Web services/Apex call outs&apos;),ISPICKVAL( PF_Complexity__c , &apos;Medium&apos;)) , 56, 
+IF( And (ISPICKVAL(PF_Type__c,&apos;Web services/Apex call outs&apos;),ISPICKVAL( PF_Complexity__c , &apos;Complex&apos;)) ,100, 
+IF( And (ISPICKVAL(PF_Type__c,&apos;Trigger/Trigger helper&apos;),ISPICKVAL( PF_Complexity__c , &apos;Simple&apos;)) , 18, 
+IF( And (ISPICKVAL(PF_Type__c,&apos;Trigger/Trigger helper&apos;),ISPICKVAL( PF_Complexity__c , &apos;Medium&apos;)) , 36, 
+IF( And (ISPICKVAL(PF_Type__c,&apos;Trigger/Trigger helper&apos;),ISPICKVAL( PF_Complexity__c , &apos;Complex&apos;)) , 88, 
+IF( And (ISPICKVAL(PF_Type__c,&apos;Data Migration&apos;),ISPICKVAL( PF_Complexity__c , &apos;Simple&apos;)) , 72, 
+IF( And (ISPICKVAL(PF_Type__c,&apos;Data Migration&apos;),ISPICKVAL( PF_Complexity__c , &apos;Medium&apos;)) , 136, 
+IF( And (ISPICKVAL(PF_Type__c,&apos;Data Migration&apos;),ISPICKVAL( PF_Complexity__c , &apos;Complex&apos;)) , 418, 
+IF( And (ISPICKVAL(PF_Type__c,&apos;Integration&apos;),ISPICKVAL( PF_Complexity__c , &apos;Simple&apos;)) , 20, 
+IF( And (ISPICKVAL(PF_Type__c,&apos;Integration&apos;),ISPICKVAL( PF_Complexity__c , &apos;Medium&apos;)) , 84, 
+IF( And (ISPICKVAL(PF_Type__c,&apos;Integration&apos;),ISPICKVAL( PF_Complexity__c , &apos;Complex&apos;)) , 152, 
+IF( And (ISPICKVAL(PF_Type__c,&apos;Reporting &amp; Visualization&apos;),ISPICKVAL( PF_Complexity__c , &apos;Simple&apos;)) , 5, 
+IF( And (ISPICKVAL(PF_Type__c,&apos;Reporting &amp; Visualization&apos;),ISPICKVAL( PF_Complexity__c , &apos;Medium&apos;)) , 11, 
+IF( And (ISPICKVAL(PF_Type__c,&apos;Reporting &amp; Visualization&apos;),ISPICKVAL( PF_Complexity__c , &apos;Complex&apos;)) , 30, 
+IF( And (ISPICKVAL(PF_Type__c,&apos;UI Development&apos;),ISPICKVAL( PF_Complexity__c , &apos;Simple&apos;)) , 80, 
+IF( And (ISPICKVAL(PF_Type__c,&apos;UI Development&apos;),ISPICKVAL( PF_Complexity__c , &apos;Medium&apos;)) , 120, 
+IF( And (ISPICKVAL(PF_Type__c,&apos;UI Development&apos;),ISPICKVAL( PF_Complexity__c , &apos;Complex&apos;)) , 220, 
+IF( And (ISPICKVAL(PF_Type__c,&apos;UX Design&apos;),ISPICKVAL( PF_Complexity__c , &apos;Simple&apos;)) , 60, 
+IF( And (ISPICKVAL(PF_Type__c,&apos;UX Design&apos;),ISPICKVAL( PF_Complexity__c , &apos;Medium&apos;)) , 120, 
+IF( And (ISPICKVAL(PF_Type__c,&apos;UX Design&apos;),ISPICKVAL( PF_Complexity__c , &apos;Complex&apos;)) , 220, 
+IF( ISPICKVAL( PF_Type__c, &apos;Other&apos;) , PF_Estimate_Hours__c,0)))))))))))))))))))))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This is an auto-calculated estimation of effort based on the work task type and complexity. This estimation includes development and unit testing effort for this work task.</inlineHelpText>
+    <label>Calculated Estimated Hours</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

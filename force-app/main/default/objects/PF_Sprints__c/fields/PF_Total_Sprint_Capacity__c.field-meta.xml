@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Total_Sprint_Capacity__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( PF_Number_of_Business_Day__c &gt; 0,(PF_Number_of_Business_Day__c * 6 * PF_Number_Of_Resources__c ),0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Calculated Sprint Capacity</inlineHelpText>
+    <label>Total Sprint Capacity</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

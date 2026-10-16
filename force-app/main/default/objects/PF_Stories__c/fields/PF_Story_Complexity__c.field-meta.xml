@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Story_Complexity__c</fullName>
+    <description>T-shirt size to represent the complexity of the user story</description>
+    <externalId>false</externalId>
+    <formula>CASE(PF_Story_Point__c,
+&quot;89&quot;, &quot;Extra Large&quot;,
+&quot;55&quot;,&quot;Large&quot;,
+&quot;34&quot;,&quot;Large&quot;,
+&quot;21&quot;,&quot;Large&quot;,
+&quot;13&quot;,&quot;Medium&quot;,
+&quot;8&quot;,&quot;Medium&quot;,
+&quot;5&quot;,&quot;Medium&quot;,
+&quot;3&quot;,&quot;Small&quot;,
+&quot;2&quot;,&quot;Small&quot;,
+&quot;1&quot;,&quot;Small&quot;,
+Null)</formula>
+    <inlineHelpText>Reference for user story complexity: 
+a) 89: Extra Large
+a) 21 to 55: Large - Custom development, Lightning compatibility, Data Integration 
+b) 5 to 13: Medium - Workflows, Validation Rules, Custom Reports and Dashboards 
+c) 1 to 3: Small - Field</inlineHelpText>
+    <label>Story Complexity / Executability</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

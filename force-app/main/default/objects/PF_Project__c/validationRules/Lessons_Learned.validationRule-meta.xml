@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lessons_Learned</fullName>
+    <active>false</active>
+    <description>Lessons learned can only be filled in when status is Completed</description>
+    <errorConditionFormula>AND( NOT(ISPICKVAL(PF_Project_Status__c, &apos;Completed&apos;)), NOT( ISBLANK( Lessons_learned__c ) ) )</errorConditionFormula>
+    <errorDisplayField>Lessons_learned__c</errorDisplayField>
+    <errorMessage>Lessons learned can only be filled in when status is Completed</errorMessage>
+</ValidationRule>

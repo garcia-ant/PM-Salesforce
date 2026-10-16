@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Risk_Ranking__c</fullName>
+    <externalId>false</externalId>
+    <formula>Case(PF_Impact__c,
+&quot;Low&quot;, 1,
+&quot;Medium&quot;, 2,
+&quot;High&quot;, 3,
+&quot;Critical&quot;, 4,
+NULL)*
+
+Case(PF_Probability__c,
+&quot;Unlikely&quot;, 1,
+&quot;Moderate&quot;, 2,
+&quot;Likely&quot;, 3,
+&quot;Realized&quot;, 4,
+&quot;Cancelled&quot;, 0,
+NULL)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Indicates the Risk Ranking: 1 indicates low risk, while 16 indicates very high risk.</inlineHelpText>
+    <label>Risk Ranking</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

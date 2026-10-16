@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Sprint_Velocity__c</fullName>
+    <description>Velocity = Sprint Capacity / Number of Business Days (Since we are hitting formula limit - We have put it in the alternate way)</description>
+    <externalId>false</externalId>
+    <formula>6 * PF_Number_Of_Resources__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Sprint Velocity is the optimized burn down rate. Velocity = Sprint Capacity / Number of Business Days in Sprint.</inlineHelpText>
+    <label>Sprint Velocity</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

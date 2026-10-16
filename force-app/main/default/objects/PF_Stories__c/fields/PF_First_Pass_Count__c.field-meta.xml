@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_First_Pass_Count__c</fullName>
+    <inlineHelpText>Count of Test cases which Passed in first run.</inlineHelpText>
+    <label>First Pass Count</label>
+    <summaryFilterItems>
+        <field>PF_TestCases__c.PF_First_Pass_Rate__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>PF_TestCases__c.PF_Story__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

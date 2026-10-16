@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Resolution_Type__c</fullName>
+    <inlineHelpText>When closing a defect, select the type of resolution that helped fix the defect.</inlineHelpText>
+    <label>Resolution Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>PF_Status__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Configuration</fullName>
+                <color>#0B6FCE</color>
+                <default>false</default>
+                <label>Configuration</label>
+            </value>
+            <value>
+                <fullName>Data Migration</fullName>
+                <color>#78C953</color>
+                <default>false</default>
+                <label>Data Migration</label>
+            </value>
+            <value>
+                <fullName>Development</fullName>
+                <color>#E27001</color>
+                <default>false</default>
+                <label>Development</label>
+            </value>
+            <value>
+                <fullName>Duplicate</fullName>
+                <color>#A53711</color>
+                <default>false</default>
+                <label>Duplicate</label>
+            </value>
+            <value>
+                <fullName>Training</fullName>
+                <color>#A845DC</color>
+                <default>false</default>
+                <label>Training</label>
+            </value>
+            <value>
+                <fullName>Working as Designed</fullName>
+                <color>#F3D904</color>
+                <default>false</default>
+                <label>Working as Designed</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Awaiting Deployment</controllingFieldValue>
+            <controllingFieldValue>Awaiting Re-Test</controllingFieldValue>
+            <valueName>Configuration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Awaiting Deployment</controllingFieldValue>
+            <controllingFieldValue>Awaiting Re-Test</controllingFieldValue>
+            <valueName>Data Migration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Awaiting Deployment</controllingFieldValue>
+            <controllingFieldValue>Awaiting Re-Test</controllingFieldValue>
+            <valueName>Development</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Awaiting Deployment</controllingFieldValue>
+            <controllingFieldValue>Awaiting Re-Test</controllingFieldValue>
+            <valueName>Duplicate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Awaiting Deployment</controllingFieldValue>
+            <controllingFieldValue>Awaiting Re-Test</controllingFieldValue>
+            <valueName>Training</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Awaiting Deployment</controllingFieldValue>
+            <controllingFieldValue>Awaiting Re-Test</controllingFieldValue>
+            <valueName>Working as Designed</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Read_Only_After_Submit</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT( $Setup.Org_Exceptions__c.Bypass_Validation_rules__c ), 
+AND(
+    NOT(ISNEW()),
+    NOT(ISPICKVAL(Status__c, &quot;Open&quot;))
+))</errorConditionFormula>
+    <errorMessage>You cannot edit the Governance Report after submitting</errorMessage>
+</ValidationRule>

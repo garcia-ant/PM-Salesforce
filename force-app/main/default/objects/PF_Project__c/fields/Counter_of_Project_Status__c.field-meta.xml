@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Counter_of_Project_Status__c</fullName>
+    <defaultValue>0</defaultValue>
+    <description>Every time Project Status changes to Re-Planning the Counter field increases by 1.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Every time Project Status changes to Re-Planning the Counter field increases by 1.</inlineHelpText>
+    <label>Counter of Project Status</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

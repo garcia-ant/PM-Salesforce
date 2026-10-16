@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Work_Type__c</fullName>
+    <inlineHelpText>Select the type of work task.</inlineHelpText>
+    <label>Work Type</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Configuration</fullName>
+                <default>false</default>
+                <label>Configuration</label>
+            </value>
+            <value>
+                <fullName>VF Page/Component</fullName>
+                <default>false</default>
+                <label>VF Page/Component</label>
+            </value>
+            <value>
+                <fullName>Apex Class</fullName>
+                <default>false</default>
+                <label>Apex Class</label>
+            </value>
+            <value>
+                <fullName>Web services/Apex call outs</fullName>
+                <default>false</default>
+                <label>Web services/Apex call outs</label>
+            </value>
+            <value>
+                <fullName>Trigger/Trigger helper</fullName>
+                <default>false</default>
+                <label>Trigger/Trigger helper</label>
+            </value>
+            <value>
+                <fullName>Data Migration</fullName>
+                <default>false</default>
+                <label>Data Migration</label>
+            </value>
+            <value>
+                <fullName>Integration</fullName>
+                <default>false</default>
+                <label>Integration</label>
+            </value>
+            <value>
+                <fullName>UX Design</fullName>
+                <default>false</default>
+                <label>UX Design</label>
+            </value>
+            <value>
+                <fullName>UI Development</fullName>
+                <default>false</default>
+                <label>UI Development</label>
+            </value>
+            <value>
+                <fullName>Reporting &amp; Visualization</fullName>
+                <default>false</default>
+                <label>Reporting &amp; Visualization</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

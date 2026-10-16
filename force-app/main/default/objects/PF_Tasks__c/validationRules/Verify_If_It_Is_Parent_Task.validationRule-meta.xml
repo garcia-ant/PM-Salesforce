@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Verify_If_It_Is_Parent_Task</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT( $Setup.Org_Exceptions__c.Bypass_Validation_rules__c ), Parent_Work_Task__r.Is_Parent_Task__c == false &amp;&amp; LEN(Parent_Work_Task__c) != 0)</errorConditionFormula>
+    <errorMessage>The selected task is not defined as Parent Task</errorMessage>
+</ValidationRule>

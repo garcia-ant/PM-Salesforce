@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Approach_Strategy__c</fullName>
+    <description>This describes the approach of how the project will be accomplished.</description>
+    <inlineHelpText>This describes the approach of how the project will be accomplished.</inlineHelpText>
+    <label>Approach (Strategy)</label>
+    <length>131072</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

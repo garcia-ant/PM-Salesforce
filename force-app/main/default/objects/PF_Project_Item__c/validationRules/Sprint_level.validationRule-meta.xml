@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sprint_level</fullName>
+    <active>true</active>
+    <description>Mandatory Sprint if Level is selected as Sprint</description>
+    <errorConditionFormula>AND(NOT( $Setup.Org_Exceptions__c.Bypass_Validation_rules__c ), ISPICKVAL(PF_Level__c, &apos;Sprint&apos;) &amp;&amp; ISBLANK(PF_Sprint__c))</errorConditionFormula>
+    <errorMessage>Please populate Sprint</errorMessage>
+</ValidationRule>

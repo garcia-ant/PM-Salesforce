@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Defects_Assigned_to_Me</fullName>
+    <columns>PF_Test_Case__c</columns>
+    <columns>NAME</columns>
+    <columns>PF_Assigned_To__c</columns>
+    <columns>PF_Type__c</columns>
+    <columns>PF_Status__c</columns>
+    <columns>PF_Severity__c</columns>
+    <columns>PF_Priority__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>PF_Planned_Fixed_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PF_Defect_Current_User__c</field>
+        <operation>equals</operation>
+        <value>Yes</value>
+    </filters>
+    <label>All Defects Assigned to Me</label>
+</ListView>

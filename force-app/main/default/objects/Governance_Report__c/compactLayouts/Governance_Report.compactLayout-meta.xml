@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Governance_Report</fullName>
+    <fields>Name</fields>
+    <fields>Project__c</fields>
+    <fields>Assigned_To__c</fields>
+    <fields>Report_Due_Date__c</fields>
+    <fields>Status__c</fields>
+    <label>Governance Report</label>
+</CompactLayout>

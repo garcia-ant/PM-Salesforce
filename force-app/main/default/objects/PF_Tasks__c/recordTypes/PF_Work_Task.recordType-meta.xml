@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Work_Task</fullName>
+    <active>true</active>
+    <description>Standard Project Force record type</description>
+    <label>Work Task</label>
+    <picklistValues>
+        <picklist>PF_Complexity__c</picklist>
+        <values>
+            <fullName>Complex</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Simple</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PF_Priority__c</picklist>
+        <values>
+            <fullName>Critical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PF_Type__c</picklist>
+        <values>
+            <fullName>Apex Class</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Decision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Configuration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Migration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reporting %26 Visualization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Test Script</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trigger%2FTrigger Helper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UI%2FUX Design</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UI%2FUX Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VF Page%2FComponent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web Services%2FApex Call Outs</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PF_Work_Task_Status__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PF_Work_Type__c</picklist>
+        <values>
+            <fullName>Apex Class</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Configuration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Migration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reporting %26 Visualization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trigger%2FTrigger helper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UI Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UX Design</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VF Page%2FComponent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web services%2FApex call outs</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>Change Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enhancements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Original Requirement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

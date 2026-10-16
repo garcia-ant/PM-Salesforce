@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PF_Test_Case_Execution_Current_User__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(  PF_Assigned_To__r.Id = $User.Id, &quot;Yes&quot;, &quot;No&quot;)</formula>
+    <label>Test Case Execution Current User</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
